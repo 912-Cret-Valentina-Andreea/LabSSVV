@@ -28,6 +28,10 @@ public class Service {
         this.studentXmlRepo = studentXmlRepo;
     }
 
+    public Service(TemaXMLRepository temaXmlRepo) {
+        this.temaXmlRepo = temaXmlRepo;
+    }
+
     public Iterable<Student> findAllStudents() { return studentXmlRepo.findAll(); }
 
     public Iterable<Tema> findAllTeme() { return temaXmlRepo.findAll(); }
